@@ -1,0 +1,15 @@
+﻿{
+  "Version": "12.4.1",
+  "Name": "barq",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://support.barq.social/api/v2/uploads.json",
+  "Parameters": {
+    "filename": "$filename$"
+  },
+  "Body": "Binary",
+  "RegexList": [
+    "/token\\/(.*)\\/\\?name"
+  ],
+  "URL": "$json:upload.attachments[0].mapped_content_url$"
+}

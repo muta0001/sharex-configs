@@ -1,0 +1,14 @@
+﻿{
+  "Version": "13.7.0",
+  "Name": "Tineye",
+  "DestinationType": "ImageUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://tineye.com/result_json/",
+  "Parameters": {
+    "sort": "score",
+    "order": "desc"
+  },
+  "Body": "MultipartFormData",
+  "FileFormName": "image",
+  "URL": "https://tineye.com/query/$json:query.key$"
+}

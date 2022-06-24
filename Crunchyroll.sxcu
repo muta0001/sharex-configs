@@ -1,0 +1,12 @@
+﻿{
+  "Version": "12.4.1",
+  "Name": "Crunchyroll",
+  "DestinationType": "ImageUploader, TextUploader, FileUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://crunchyroll.zendesk.com/api/v2/uploads.json",
+  "Parameters": {
+    "filename": "$filename$"
+  },
+  "Body": "Binary",
+  "URL": "$json:upload.attachments[0].mapped_content_url$"
+}
